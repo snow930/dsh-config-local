@@ -1,0 +1,25 @@
+{
+  "petId": "whale-girl",
+  "names": {},
+  "affinity": {
+    "points": 37,
+    "lastPetAt": 1787461677231,
+    "lastFeedAt": 1787275198013,
+    "pets": 5,
+    "feeds": 1,
+    "petRejects": 6,
+    "feedRejects": 12,
+    "turns": 27
+  },
+  "treats": {
+    "treats": 19,
+    "lastTreatGrantAt": 1787272349860,
+    "turnsAtLastTreatGrant": 24
+  },
+  "display": {
+    "visible": false,
+    "size": 160,
+    "right": 122,
+    "bottom": 514
+  }
+}

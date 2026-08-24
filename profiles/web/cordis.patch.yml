@@ -1,0 +1,31 @@
+# Your patch layer for this dsh profile, applied after every bundle layer:
+# a top-level YAML array of loader patch entries (id-targeted config
+# overrides, disables, and insert lists; `!!js` expressions allowed).
+# []
+- id: model-sync
+  disabled: true
+- id: dsh-pocket
+  disabled: true
+- id: config-manager
+  disabled: true
+# dsh-mneme 本地 embedding（离线语义搜索）：整行覆盖 bundle 层同 id 行，
+# 故重述原有全部键（值不变），仅新增 embedProvider。
+- id: dsh-mneme
+  config:
+    memoryDir: ~/.dsh/memory
+    autoInject: true
+    autoSummarize: true
+    maxInjectedItems: 5
+    importanceThreshold: 3
+    autoDream: true
+    dreamThresholdCount: 10
+    dreamThresholdChars: 5000
+    dreamDelayMs: 2000
+    embedProvider: local
+    # 升级：bge-base-zh-v1.5（768 维，中文语义更强）+ 本地 Rerank 精排
+    localEmbedModel: Xenova/bge-base-zh-v1.5
+    localEmbedDimension: 768
+    rerankEnabled: true
+    rerankProvider: local
+- id: ui-usage-billing
+  disabled: true

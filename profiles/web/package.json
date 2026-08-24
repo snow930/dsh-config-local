@@ -1,0 +1,47 @@
+{
+  "name": "dsh-profile-web",
+  "private": true,
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "@kenz1117/dsh-ui-usage-billing": "^0.9.11",
+    "@liustack/modlens": "^3.24.0",
+    "@liustack/modsearch": "^5.9.0",
+    "@modusensus/dsh-mneme": "^0.7.0",
+    "@nanmicoder/dsh-agent-teams": "^0.1.13",
+    "dsh-better-sidebar": "^0.15.2",
+    "dsh-chat-import": "^0.7.0",
+    "dsh-config-manager": "^0.1.45",
+    "dsh-context": "^0.25.3",
+    "dsh-deepread": "^1.0.0",
+    "dsh-footer-column": "link:/home/nanxi/git/dsh-footer-column",
+    "dsh-model-sync": "^0.1.6",
+    "dsh-pocket": "^1.13.4",
+    "dsh-recall-plugin": "^1.6.1",
+    "dsh-self-upgrade": "link:/home/nanxi/git/dsh-self-upgrade",
+    "dshmarket": "^1.20.1"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dshmarket",
+        "@liustack/modlens",
+        "dsh-pocket",
+        "dsh-context",
+        "@modusensus/dsh-mneme",
+        "@nanmicoder/dsh-agent-teams",
+        "dsh-recall-plugin",
+        "dsh-better-sidebar",
+        "dsh-model-sync",
+        "dsh-chat-import",
+        "dsh-deepread",
+        "dsh-config-manager",
+        "@liustack/modsearch",
+        "@kenz1117/dsh-ui-usage-billing",
+        "dsh-footer-column",
+        "dsh-self-upgrade"
+      ]
+    }
+  }
+}
