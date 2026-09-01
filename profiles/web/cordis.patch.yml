@@ -2,12 +2,6 @@
 # a top-level YAML array of loader patch entries (id-targeted config
 # overrides, disables, and insert lists; `!!js` expressions allowed).
 # []
-- id: model-sync
-  disabled: true
-- id: dsh-pocket
-  disabled: true
-- id: config-manager
-  disabled: true
 # dsh-mneme 本地 embedding（离线语义搜索）：整行覆盖 bundle 层同 id 行，
 # 故重述原有全部键（值不变），仅新增 embedProvider。
 - id: dsh-mneme
@@ -27,5 +21,29 @@
     localEmbedDimension: 768
     rerankEnabled: true
     rerankProvider: local
-- id: ui-usage-billing
+# dsh-team-auto-router：复杂任务自动触发 agent-teams。覆盖 bundle 层同 id 行
+# （宿主 loader 对同 id 行做字段级合并，只写要覆盖的键即可）。
+# off=不启用；ask=超阈值先经 ask_user_question 确认再建队；auto=超阈值直接激活 captain 协议。
+# threshold/minLength 按 0.1.1 评分器实测校准：真实多项任务通常仅 structure(+2)。
+- id: team-auto-router
+  config:
+    autoTrigger: ask
+    scoreThreshold: 2
+    cooldownMinutes: 30
+    minLength: 30
+- id: dsh-footer-column
+  disabled: true
+- id: dsh-pocket
+  disabled: true
+- id: dsh-history
+  disabled: true
+- id: team-auto-router
+  disabled: true
+- id: modlens
+  disabled: true
+
+- id: modsearch
+  disabled: true
+
+- id: ui-git-graph
   disabled: true

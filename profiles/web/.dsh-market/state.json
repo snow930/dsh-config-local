@@ -1,1 +1,1 @@
-{"disabled":["dsh-model-sync","dsh-pocket","dsh-config-manager","@kenz1117/dsh-ui-usage-billing"],"groups":{},"groupOrder":[],"region":"global","regionAuto":true}
+{"disabled":["@liustack/modsearch","@linxin666/dsh-client-ui-git-graph"],"groups":{},"groupOrder":[],"channel":"stable","region":"global","regionAuto":true}
